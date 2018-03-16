@@ -1,0 +1,21 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: cwr2_trabant\data\penetration\duroplast_5mm.bisurf
+//Produced from mikero's Dos Tools Dll version 6.68
+//'now' is Fri Mar 16 16:48:26 2018 : 'file' last modified on Tue Dec 20 21:30:31 2016
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+Density = 1380;
+Thickness = 5;
+rough = 0.1;
+dust = 0;
+bulletPenetrability = 150;
+bulletPenetrabilityWithThickness = 150;
+soundEnviron = "Empty";
+isWater = 0;
+friction = 0.7;
+restitution = 0.3;
+impact = "Hit_Metal";
+soundHit = "plastic";
