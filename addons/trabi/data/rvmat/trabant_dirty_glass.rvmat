@@ -65,7 +65,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = QPATHOF(data\smdi\trabi_windshield_dirty_smdi.paa);
+	texture = QPATHTOF(data\smdi\trabi_windshield_dirty_smdi.paa);
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -89,6 +89,6 @@ class Stage6
 };
 class Stage7
 {
-	texture = "ca\data\env_land_co.paa);
+	texture = "ca\data\env_land_co.paa";
 	uvSource = "none";
 };

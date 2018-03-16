@@ -17,7 +17,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = QPATHOF(data\normals\trabi_dirty_nohq.paa);
+	texture = QPATHTOF(data\normals\trabi_dirty_nohq.paa);
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -53,7 +53,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = QPATHOF(data\as\trabi_as.paa);
+	texture = QPATHTOF(data\as\trabi_as.paa);
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -65,7 +65,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = QPATHOF(data\smdi\trabi_dirty_smdi.paa);
+	texture = QPATHTOF(data\smdi\trabi_dirty_smdi.paa);
 	uvSource = "tex";
 	class uvTransform
 	{

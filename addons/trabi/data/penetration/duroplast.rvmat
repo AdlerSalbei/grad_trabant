@@ -1,6 +1,6 @@
 #define _ARMA_
 
-surfaceInfo = QPATHOF(data\penetration\duroplast_5mm.bisurf);
+surfaceInfo = QPATHTOF(data\penetration\duroplast_5mm.bisurf);
 ambient[] = {0.490196,0.592157,0.556863,1};
 diffuse[] = {0.490196,0.592157,0.556863,1};
 forcedDiffuse[] = {0,0,0,0};
