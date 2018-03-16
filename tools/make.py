@@ -72,7 +72,7 @@ dssignfile = ""
 prefix = "grad_trabant"
 pbo_name_prefix = "grad_trabant_"
 signature_blacklist = []
-importantFiles = ["mod.cpp", "LICENSE", "logo_grad_ca.paa"]
+importantFiles = ["mod.cpp"]
 versionFiles = []
 
 ciBuild = False # Used for CI builds

@@ -1,10 +1,4 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: cwr2_trabant\config.bin
-//Produced from mikero's Dos Tools Dll version 6.68
-//'now' is Fri Mar 16 16:48:26 2018 : 'file' last modified on Tue Dec 20 21:30:30 2016
-//http://dev-heaven.net/projects/list_files/mikero-pbodll
-////////////////////////////////////////////////////////////////////
-
+#include "script_component.hpp"
 #define _ARMA_
 
 class CfgPatches
@@ -15,7 +9,7 @@ class CfgPatches
 		author = "CWR² Modification";
 		magazines[] = {};
 		mail = "cwr2@mailbox.org";
-		requiredAddons[] = {"cwr2","cwr2_civilians","cawheeled","cawheeled_e"};
+		requiredAddons[] = {"cwr2","cawheeled","cawheeled_e"};
 		requiredVersion = 1.62;
 		units[] = {"cwr2_Trabant","cwr2_Trabant_White","cwr2_Trabant_Brown","cwr2_Trabant_Yellow","cwr2_Trabant_Green","cwr2_Trabant_Blue","cwr2_Trabant_Dirty","cwr2_Trabant_film"};
 		url = "http://cwr2.arma2.fr";
@@ -215,7 +209,7 @@ class CfgVehicles
 		transportMaxWeapons = 5;
 		transportSoldier = 3;
 		turnCoef = 2;
-		typicalCargo[] = {"cwr2_Civilian5"};
+		typicalCargo[] = {"C_man_1"};
 		viewCargoShadow = 1;
 		viewCargoShadowAmb = 0.5;
 		viewCargoShadowDiff = 0.5;
@@ -223,7 +217,7 @@ class CfgVehicles
 		class Damage
 		{
 			tex[] = {};
-			mat[] = {"cwr2\cars\cwr2_trabant\data\rvmat\trabant.rvmat","cwr2\cars\cwr2_trabant\data\rvmat\trabant_damage.rvmat","cwr2\cars\cwr2_trabant\data\rvmat\trabant_destruct.rvmat","cwr2\cars\cwr2_trabant\data\rvmat\trabant_glass.rvmat","cwr2\cars\cwr2_trabant\data\rvmat\trabant_glass_damage.rvmat","cwr2\cars\cwr2_trabant\data\rvmat\trabant_glass_destruct.rvmat"};
+			mat[] = {QPATHOF(data\rvmat\trabant.rvmat), QPATHOF(data\rvmat\trabant_damage.rvmat), QPATHOF(data\rvmat\trabant_destruct.rvmat), QPATHOF(data\rvmat\trabant_glass.rvmat), QPATHOF(data\rvmat\trabant_glass_damage.rvmat), QPATHOF(data\rvmat\trabant_glass_destruct.rvmat)};
 		};
 		class Library
 		{
@@ -486,54 +480,54 @@ class CfgVehicles
 	{
 		crew = "cwr2_Civilian2";
 		displayName = "Trabant (White)";
-		hiddenSelectionsTextures[] = {"cwr2\cars\cwr2_trabant\data\trabi_white_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHOF(data\trabi_white_co.paa)};
 	};
 	class cwr2_Trabant_Brown: cwr2_Trabant
 	{
 		crew = "cwr2_Civilian3";
 		displayName = "Trabant (Brown)";
-		hiddenSelectionsTextures[] = {"cwr2\cars\cwr2_trabant\data\trabi_brown_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHOF(data\trabi_brown_co.paa)};
 	};
 	class cwr2_Trabant_Yellow: cwr2_Trabant
 	{
 		crew = "cwr2_Civilian4";
 		displayName = "Trabant (Yellow)";
-		hiddenSelectionsTextures[] = {"cwr2\cars\cwr2_trabant\data\trabi_yellow_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHOF(data\trabi_yellow_co.paa)};
 	};
 	class cwr2_Trabant_Green: cwr2_Trabant
 	{
 		crew = "cwr2_Civilian5";
 		displayName = "Trabant (Green)";
-		hiddenSelectionsTextures[] = {"cwr2\cars\cwr2_trabant\data\trabi_green_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHOF(data\trabi_green_co.paa)};
 	};
 	class cwr2_Trabant_Blue: cwr2_Trabant
 	{
 		crew = "cwr2_Civilian6";
 		displayName = "Trabant (Blue)";
-		hiddenSelectionsTextures[] = {"cwr2\cars\cwr2_trabant\data\trabi_blue_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHOF(data\trabi_blue_co.paa)};
 	};
 	class cwr2_Trabant_Dirty: cwr2_Trabant
 	{
 		crew = "cwr2_Civilian7";
 		displayName = "Trabant (Dirty)";
 		model = "\cwr2\cars\cwr2_trabant\cwr2_trabant_dirty.p3d";
-		hiddenSelectionsTextures[] = {"cwr2\cars\cwr2_trabant\data\trabi_dirty_co.paa"};
+		hiddenSelectionsTextures[] = {QPATHOF(data\trabi_dirty_co.paa)};
 		class Damage
 		{
 			tex[] = {};
-			mat[] = {"cwr2\cars\cwr2_trabant\data\rvmat\trabant_dirty.rvmat","cwr2\cars\cwr2_trabant\data\rvmat\trabant_dirty_damage.rvmat","cwr2\cars\cwr2_trabant\data\rvmat\trabant_dirty_destruct.rvmat","cwr2\cars\cwr2_trabant\data\rvmat\trabant_dirty_glass.rvmat","cwr2\cars\cwr2_trabant\data\rvmat\trabant_dirty_glass_damage.rvmat","cwr2\cars\cwr2_trabant\data\rvmat\trabant_dirty_glass_destruct.rvmat"};
+			mat[] = {QPATHOF(data\rvmat\trabant_dirty.rvmat), QPATHOF(data\rvmat\trabant_dirty_damage.rvmat), QPATHOF(data\rvmat\trabant_dirty_destruct.rvmat), QPATHOF(data\rvmat\trabant_dirty_glass.rvmat), QPATHOF(data\rvmat\trabant_dirty_glass_damage.rvmat), QPATHOF(data\rvmat\trabant_dirty_glass_destruct.rvmat)};
 		};
 	};
 	class cwr2_Trabant_film: cwr2_Trabant_Dirty
 	{
 		displayName = "Trabant (Armoured)";
 		armor = 1500;
-		model = "\cwr2\cars\cwr2_trabant\cwr2_trabant_dirty_metal.p3d";
+		model = QPATHOF(cwr2_trabant_dirty_metal.p3d);
 		scope = 1;
 		class Damage
 		{
 			tex[] = {};
-			mat[] = {"cwr2\cars\cwr2_trabant\data\rvmat\trabant_dirty.rvmat","cwr2\cars\cwr2_trabant\data\rvmat\trabant_dirty_damage.rvmat","cwr2\cars\cwr2_trabant\data\rvmat\trabant_dirty_damage.rvmat","cwr2\cars\cwr2_trabant\data\rvmat\trabant_dirty_glass.rvmat","cwr2\cars\cwr2_trabant\data\rvmat\trabant_dirty_glass_damage.rvmat","cwr2\cars\cwr2_trabant\data\rvmat\trabant_dirty_glass_damage.rvmat"};
+			mat[] = {QPATHOF(data\rvmat\trabant_dirty.rvmat), QPATHOF(data\rvmat\trabant_dirty_damage.rvmat), QPATHOF(data\rvmat\trabant_dirty_damage.rvmat), QPATHOF(data\rvmat\trabant_dirty_glass.rvmat), QPATHOF(data\rvmat\trabant_dirty_glass_damage.rvmat), QPATHOF(data\rvmat\trabant_dirty_glass_damage.rvmat)};
 		};
 		class Hitpoints: Hitpoints
 		{
