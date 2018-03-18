@@ -1,10 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: cwr2_trabant\data\rvmat\trabant_dirty_glass_damage.rvmat
-//Produced from mikero's Dos Tools Dll version 6.68
-//'now' is Fri Mar 16 16:48:26 2018 : 'file' last modified on Tue Dec 20 21:30:31 2016
-//http://dev-heaven.net/projects/list_files/mikero-pbodll
-////////////////////////////////////////////////////////////////////
-
 #define _ARMA_
 
 ambient[] = {0.9999999,0.9999999,0.9999999,1};
@@ -17,7 +10,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "ca\data\destruct\destr_glass_foil2_full_nohq.paa";
+	texture = "a3\structures_f\wrecks\data\destr_glass_foil2_full_nohq.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -65,7 +58,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "ca\data\destruct\destr_glass_foil2_full_smdi.paa";
+	texture = "a3\structures_f\wrecks\data\destr_glass_foil2_full_smdi.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -89,6 +82,6 @@ class Stage6
 };
 class Stage7
 {
-	texture = "ca\data\env_land_co.paa";
+	texture = "a3\data\env_land_co.paa";
 	uvSource = "none";
 };

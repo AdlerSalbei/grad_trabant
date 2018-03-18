@@ -1,10 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: cwr2_trabant\data\rvmat\trabant_dirty_destruct.rvmat
-//Produced from mikero's Dos Tools Dll version 6.68
-//'now' is Fri Mar 16 16:48:26 2018 : 'file' last modified on Tue Dec 20 21:30:31 2016
-//http://dev-heaven.net/projects/list_files/mikero-pbodll
-////////////////////////////////////////////////////////////////////
-
 #define _ARMA_
 
 ambient[] = {1,1,1,1};
@@ -29,7 +22,7 @@ class Stage1
 };
 class Stage2
 {
-	texture = "ca\data\destruct\destruct_plech_full_dt.paa";
+	texture = "a3\structures_f\wrecks\data\destruct_plech_full_dt.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -41,7 +34,7 @@ class Stage2
 };
 class Stage3
 {
-	texture = "ca\data\destruct\destruct_plech_full_mc.paa";
+	texture = "a3\structures_f\wrecks\data\destruct_plech_full_mc.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -65,7 +58,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "ca\data\destruct\destruct_plech_full_smdi.paa";
+	texture = "a3\structures_f\wrecks\data\destruct_plech_full_smdi.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -89,6 +82,6 @@ class Stage6
 };
 class Stage7
 {
-	texture = "ca\data\env_land_co.paa";
+	texture = "a3\data\env_land_co.paa";
 	uvSource = "none";
 };

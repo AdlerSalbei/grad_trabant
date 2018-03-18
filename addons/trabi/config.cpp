@@ -35,17 +35,17 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class Crew;
 		class Trabant_Driver: Crew
 		{
-			file = "\cwr2\cars\cwr2_trabant\anim\trabant_driver.rtm";
+			file = QPATHTOF(anim\trabant_driver.rtm);
 			interpolateTo[] = {"KIA_BRDM2_Gunner",1};
 		};
 		class Trabant_Cargo01: Crew
 		{
-			file = "\cwr2\cars\cwr2_trabant\anim\trabant_cargo01.rtm";
+			file = QPATHTOF(anim\trabant_cargo01.rtm);
 			interpolateTo[] = {"KIA_BRDM2_Gunner",1};
 		};
 		class Trabant_Cargo02: Crew
 		{
-			file = "\cwr2\cars\cwr2_trabant\anim\trabant_cargo02.rtm";
+			file = QPATHTOF(anim\trabant_cargo02.rtm);
 			interpolateTo[] = {"KIA_BRDM2_Gunner",1};
 		};
 	};
@@ -131,16 +131,16 @@ class CfgVehicles
 	};
 	class cwr2_CarBase: Car
 	{
-		armorCrash0[] = {"ca\sounds\vehicles\crash\crash_vehicle_01",0.7,1.0,200};
-		armorCrash1[] = {"ca\sounds\vehicles\crash\crash_vehicle_02",0.7,1.0,200};
-		armorCrash2[] = {"ca\sounds\vehicles\crash\crash_vehicle_03",0.7,1.0,200};
-		armorCrash3[] = {"ca\sounds\vehicles\crash\crash_vehicle_04",0.7,1.0,200};
+		armorCrash0[] = {"a3\sounds_f_epc\Crashes\crash_vehicle_01",0.7,1.0,200};
+		armorCrash1[] = {"a3\sounds_f_epc\Crashes\crash_vehicle_02",0.7,1.0,200};
+		armorCrash2[] = {"a3\sounds_f_epc\Crashes\crash_vehicle_03",0.7,1.0,200};
+		armorCrash3[] = {"a3\sounds_f_epc\Crashes\crash_vehicle_04",0.7,1.0,200};
 		armorWheels = 0.12;
 		brakeDistance = 7.0;
-		buildCrash0[] = {"ca\sounds\vehicles\crash\crash_building_01",0.7,1.0,200};
-		buildCrash1[] = {"ca\sounds\vehicles\crash\crash_building_02",0.7,1.0,200};
-		buildCrash2[] = {"ca\sounds\vehicles\crash\crash_building_03",0.7,1.0,200};
-		buildCrash3[] = {"ca\sounds\vehicles\crash\crash_building_04",0.7,1.0,200};
+		buildCrash0[] = {"a3\sounds_f_epc\Crashes\crash_building_01",0.7,1.0,200};
+		buildCrash1[] = {"a3\sounds_f_epc\Crashes\crash_building_02",0.7,1.0,200};
+		buildCrash2[] = {"a3\sounds_f_epc\Crashes\crash_building_03",0.7,1.0,200};
+		buildCrash3[] = {"a3\sounds_f_epc\Crashes\crash_building_04",0.7,1.0,200};
 		insideSoundCoef = 0.9;
 		irTarget = 0;
 		nameSound = "veh_car";
@@ -158,12 +158,12 @@ class CfgVehicles
 		type = "VArmor";
 		unitInfoType = "UnitInfoCar";
 		vehicleClass = "cwr2_group_cars";
-		woodCrash0[] = {"ca\sounds\vehicles\crash\crash_mix_wood_01",0.7,1.0,200};
-		woodCrash1[] = {"ca\sounds\vehicles\crash\crash_mix_wood_02",0.7,1.0,200};
-		woodCrash2[] = {"ca\sounds\vehicles\crash\crash_mix_wood_03",0.7,1.0,200};
-		woodCrash3[] = {"ca\sounds\vehicles\crash\crash_mix_wood_04",0.7,1.0,200};
-		woodCrash4[] = {"ca\sounds\vehicles\crash\crash_mix_wood_05",0.7,1.0,200};
-		woodCrash5[] = {"ca\sounds\vehicles\crash\crash_mix_wood_06",0.7,1.0,200};
+		woodCrash0[] = {"a3\sounds_f_epc\Crashes\crash_mix_wood_01",0.7,1.0,200};
+		woodCrash1[] = {"a3\sounds_f_epc\Crashes\crash_mix_wood_02",0.7,1.0,200};
+		woodCrash2[] = {"a3\sounds_f_epc\Crashes\crash_mix_wood_03",0.7,1.0,200};
+		woodCrash3[] = {"a3\sounds_f_epc\Crashes\crash_mix_wood_04",0.7,1.0,200};
+		woodCrash4[] = {"a3\sounds_f_epc\Crashes\crash_mix_wood_05",0.7,1.0,200};
+		woodCrash5[] = {"a3\sounds_f_epc\Crashes\crash_mix_wood_06",0.7,1.0,200};
 		weapons[] = {"CarHorn"};
 		magazines[] = {};
 		class TransportMagazines{};
@@ -177,7 +177,7 @@ class CfgVehicles
 		cargoIsCoDriver[] = {1,0};
 		cargoAction[] = {"Trabant_Cargo02","Trabant_Cargo01","Trabant_Cargo02"};
 		cost = 2000;
-		crew = "cwr2_Civilian1";
+		crew = "C_man_1";
 		damageResistance = 0.01821;
 		displayName = "Trabant";
 		driverAction = "Trabant_Driver";
@@ -186,22 +186,22 @@ class CfgVehicles
 		faction = "cwr2_civ";
 		fuelCapacity = 50;
 		hiddenSelections[] = {"hs_camo1"};
-		hiddenSelectionsTextures[] = {"\cwr2\cars\cwr2_trabant\data\trabi_co.paa"};
-		icon = "\cwr2\general\cwr2\ui\icon_car_trabant_ca.paa";
+		hiddenSelectionsTextures[] = {QPATHTOF(data\trabi_co.paa)};
+		icon = QPATHTOF(ui\icon_car_trabant_ca.paa);
 		mapSize = 4;
 		maxSpeed = 100;
-		model = "\cwr2\cars\cwr2_trabant\cwr2_trabant.p3d";
-		picture = "\cwr2\general\cwr2\ui\picture_trabant_ca.paa";
+		model = QPATHTOF(cwr2_trabant.p3d);
+		picture = QPATHTOF(ui\picture_trabant_ca.paa);
 		predictTurnPlan = 0.95;
 		rarityUrban = 0.5;
 		scope = 2;
 		side = 3;
-		soundEngineOffExt[] = {"ca\sounds\vehicles\wheeled\car\ext\ext-car-stop-1",0.31622776,1.0,200};
-		soundEngineOffInt[] = {"ca\sounds\vehicles\wheeled\car\int\int-car-stop-1",0.31622776,1.0};
-		soundEngineOnExt[] = {"ca\sounds\vehicles\wheeled\car\ext\ext-car-start-1",0.31622776,1.0,200};
-		soundEngineOnInt[] = {"ca\sounds\vehicles\wheeled\car\int\int-car-start-1",0.31622776,1.0};
-		soundGetIn[] = {"ca\sounds\vehicles\wheeled\car\ext\ext-car-getout-1",0.32,1,30};
-		soundGetOut[] = {"ca\sounds\vehicles\wheeled\car\ext\ext-car-getout-1",0.32,1,30};
+		soundEngineOffExt[] = {QPATHTOF(sounds\ext-car-stop-1),0.31622776,1.0,200};
+		soundEngineOffInt[] = {QPATHTOF(sounds\int-car-stop-1),0.31622776,1.0};
+		soundEngineOnExt[] = {QPATHTOF(sounds\ext-car-start-1),0.31622776,1.0,200};
+		soundEngineOnInt[] = {QPATHTOF(sounds\int-car-start-1),0.31622776,1.0};
+		soundGetIn[] = {QPATHTOF(sounds\lada_door),0.32,1,30};
+		soundGetOut[] = {QPATHTOF(sounds\lada_door),0.32,1,30};
 		steerAheadPlan = 0.24;
 		terrainCoef = 4.0;
 		transportMaxBackpacks = 4;
@@ -334,13 +334,13 @@ class CfgVehicles
 			{
 				expression = "(engineOn*(1-camPos))*gmeterZ";
 				limit = "0.5";
-				sound[] = {"\ca\sounds\vehicles\wheeled\car\int\int-car-acce-2",0.31622776,1.0};
+				sound[] = {QPATHTOF(sounds\int-car-acce-2),0.31622776,1.0};
 			};
 			class AccelerationOut
 			{
 				expression = "(engineOn*camPos)*gmeterZ";
 				limit = "0.5";
-				sound[] = {"\ca\sounds\vehicles\wheeled\car\ext\ext-car-acce-2",0.31622776,1.0,200};
+				sound[] = {QPATHTOF(sounds\ext-car-acce-2),0.31622776,1.0,200};
 			};
 		};
 		class Sounds
@@ -348,115 +348,115 @@ class CfgVehicles
 			class Engine
 			{
 				frequency = "(randomizer*0.05+0.95)*rpm";
-				sound[] = {"ca\sounds\Vehicles\Wheeled\motorcycles\ext\ext-tt650-low-2",0.562341,1,250};
+				sound[] = {QPATHTOF(sounds\ext-low-2),0.562341,1,250};
 				volume = "engineOn*camPos*(rpm factor[0.7, 0.2])";
 			};
 			class EngineHighOut
 			{
 				frequency = "(randomizer*0.05+0.95)*rpm";
-				sound[] = {"\ca\sounds\Vehicles\Wheeled\motorcycles\ext\ext-tt650-high-2",0.562341,1.1,350};
+				sound[] = {QPATHTOF(sounds\ext-high-2),0.562341,1.1,350};
 				volume = "engineOn*camPos*(rpm factor[0.5, 0.9])";
 			};
 			class IdleOut
 			{
 				frequency = 1;
-				sound[] = {"\cwr2\Cars\cwr2_trabant\sounds\trabbi.wss",0.316228,1,150};
+				sound[] = {QPATHTOF(sounds\trabbi.wss),0.316228,1,150};
 				volume = "engineOn*camPos*4*(rpm factor[0.3, 0])";
 			};
 			class EngineLowIn
 			{
 				frequency = "(randomizer*0.05+0.95)*rpm";
-				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Motorcycles\int\int-tt650-low-2",0.707946,0.8};
+				sound[] = {QPATHTOF(sounds\int-low-2),0.707946,0.8};
 				volume = "((engineOn*thrust) factor[0.65, 0.2])*(1-camPos)";
 			};
 			class EngineHighIn
 			{
 				frequency = "(randomizer*0.05+0.95)*rpm";
-				sound[] = {"\ca\sounds\Vehicles\Wheeled\Motorcycles\int\int-tt650-high-2",0.707946,0.8};
+				sound[] = {QPATHTOF(sounds\int-high-2),0.707946,0.8};
 				volume = "((engineOn*thrust) factor[0.55, 0.95])*(1-camPos)";
 			};
 			class IdleIn
 			{
 				frequency = 1;
-				sound[] = {"\cwr2\Cars\cwr2_trabant\sounds\trabbi.wss",0.398107,1};
+				sound[] = {QPATHTOF(sounds\trabbi.wss),0.398107,1};
 				volume = "engineOn*2*(rpm factor[0.3, 0])*(1-camPos)";
 			};
 			class TiresRockOut
 			{
 				frequency = 1;
-				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2",0.1,1,30};
+				sound[] = {"a3\sounds_f\vehicles\soft\tires\ext-tires-rock2",0.1,1,30};
 				volume = "camPos*rock*(speed factor[2, 20])";
 			};
 			class TiresSandOut
 			{
 				frequency = 1;
-				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2",0.1,1,30};
+				sound[] = {"a3\sounds_f\vehicles\soft\tires\ext-tires-sand2",0.1,1,30};
 				volume = "camPos*sand*(speed factor[2, 20])";
 			};
 			class TiresGrassOut
 			{
 				frequency = 1;
-				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass3",0.1,1,30};
+				sound[] = {"a3\sounds_f\vehicles\soft\tires\ext-tires-grass2",0.1,1,30};
 				volume = "camPos*grass*(speed factor[2, 20])";
 			};
 			class TiresMudOut
 			{
 				frequency = 1;
-				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2",0.1,1,30};
+				sound[] = {"a3\sounds_f\vehicles\soft\tires\ext-tires-mud2",0.1,1,30};
 				volume = "camPos*mud*(speed factor[2, 20])";
 			};
 			class TiresGravelOut
 			{
 				frequency = 1;
-				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2",0.1,1,30};
+				sound[] = {"a3\sounds_f\vehicles\soft\tires\ext-tires-gravel2",0.1,1,30};
 				volume = "camPos*gravel*(speed factor[2, 20])";
 			};
 			class TiresAsphaltOut
 			{
 				frequency = 1;
-				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3",0.1,1,30};
+				sound[] = {"a3\sounds_f\vehicles\soft\tires\ext-tires-asphalt3",0.1,1,30};
 				volume = "camPos*asphalt*(speed factor[2, 20])";
 			};
 			class NoiseOut
 			{
 				frequency = 1;
-				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\int-noise3",0.1,1,30};
+				sound[] = {"a3\sounds_f\vehicles\soft\noises\noise_int_car_3",0.1,1,30};
 				volume = "camPos*(damper0 max 0.04)*(speed factor[0, 8])";
 			};
 			class TiresRockIn
 			{
 				frequency = 1;
-				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2",0.1,1};
+				sound[] = {"\a3\sounds_f\vehicles\soft\tires\int-tires-rock2",0.1,1};
 				volume = "(1-camPos)*rock*(speed factor[2, 20])";
 			};
 			class TiresSandIn
 			{
 				frequency = 1;
-				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2",0.1,1};
+				sound[] = {"\a3\sounds_f\vehicles\soft\tires\int-tires-sand2",0.1,1};
 				volume = "(1-camPos)*sand*(speed factor[2, 20])";
 			};
 			class TiresGrassIn
 			{
 				frequency = 1;
-				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass3",0.1,1};
+				sound[] = {"\a3\sounds_f\vehicles\soft\tires\int-tires-grass2",0.1,1};
 				volume = "(1-camPos)*grass*(speed factor[2, 20])";
 			};
 			class TiresMudIn
 			{
 				frequency = 1;
-				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2",0.1,1};
+				sound[] = {"\a3\sounds_f\vehicles\soft\tires\int-tires-mud2",0.1,1};
 				volume = "(1-camPos)*mud*(speed factor[2, 20])";
 			};
 			class TiresGravelIn
 			{
 				frequency = 1;
-				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2",0.1,1};
+				sound[] = {"\a3\sounds_f\vehicles\soft\tires\int-tires-gravel2",0.1,1};
 				volume = "(1-camPos)*gravel*(speed factor[2, 20])";
 			};
 			class TiresAsphaltIn
 			{
 				frequency = 1;
-				sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3",0.1,1};
+				sound[] = {"\a3\sounds_f\vehicles\soft\tires\int-tires-asphalt3",0.1,1};
 				volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
 			};
 			class NoiseIn
@@ -510,7 +510,7 @@ class CfgVehicles
 	{
 		crew = "cwr2_Civilian7";
 		displayName = "Trabant (Dirty)";
-		model = "\cwr2\cars\cwr2_trabant\cwr2_trabant_dirty.p3d";
+		model = QPATHTOF(cwr2_trabant_dirty.p3d);
 		hiddenSelectionsTextures[] = {QPATHTOF(data\trabi_dirty_co.paa)};
 		class Damage
 		{
